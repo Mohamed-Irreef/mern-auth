@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.NavBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    /* position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10; */
+}
+.nav-head{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+.sign-up{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.sign-up-form-head{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: blue;
+    text-align: center;
+
+}
+.sign-up-form{
+    width: 400px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0  4px rgba(168, 168, 168, 0.594);
+}
+.input-box{
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+.input-box input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 50px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgb(41, 41, 234);
+}
+input::placeholder{
+    color: blue;
+}
+.icon{
+    height: 100%;
+    width: 34px;
+    font-size: 22px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    background-color:  rgb(41, 41, 234);
+    color: white;
+}
+
+button{
+    width: 100%;
+    padding: 7px 20px;
+    background-color: rgb(39, 39, 238);
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    background-color: blue;
+}
+
+.toast-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
+
+.popup-container{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 78, 78, 0.776);
+    transition: all .2s;
+}
+
+.popup{
+    height: 200px;
+    width: 300px;
+   background-color:rgb(255, 255, 255) ;
+    position: relative;
+    padding-top: 60px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 0 1px rgba(159, 214, 159, 0.502);
+}
+
+.popup .img-container{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position:absolute;
+    top: -70px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.tick{
+    width: 100%;
+    padding: 7px 20px;
+    background-color: rgb(56, 215, 56);
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all .3s ease-in-out;
+}
+.tick:hover{
+    background-color: rgb(24, 227, 24);
+}
+.wrong{
+    width: 100%;
+    padding: 7px 20px;
+    background-color:rgb(243, 64, 64);
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all .3s ease-in-out;
+}
+.wrong:hover{
+    background-color: red;
+}
+
+.pop-content-tick{
+    color: green;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pop-content-wrong{
+    color: rgb(237, 44, 44);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.web-nav{
+    width: 100%;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 0 0 2px rgb(232, 230, 230);
+}
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+}
+.Nav-list{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    font-size: 17px;
+}
+.Nav-list li{
+    cursor: pointer;
+    font-weight: 500;
+    color: blue;
+    font-size: 17px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+}
