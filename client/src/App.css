@@ -183,36 +183,98 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.web-nav{
+.web-nav {
     width: 100%;
-    display:  flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     box-shadow: 0 0 0 2px rgb(232, 230, 230);
 }
-.nav-buttons{
+
+.nav-buttons {
     display: flex;
     gap: 20px;
 }
-.Nav-list{
+
+.Nav-list {
     display: flex;
     gap: 45px;
     align-items: center;
     font-size: 17px;
 }
-.Nav-list li{
+
+.Nav-list li {
     cursor: pointer;
     font-weight: 500;
     color: blue;
     font-size: 17px;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     text-align: center;
     padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .web-nav {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .Nav-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 15px;
+        display: none;
+    }
+    .Nav-list li{
+        font-size: 14px;
+    }
+    .nav-buttons {
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-buttons button{
+        font-size: 12px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard, .logout {
+        
+        font-size: 12px;
+    }
+
+    .center {
+        padding: 10px;
+    }
+
+    .text-4xl {
+        font-size: 1.5rem;
+    }
+
+    .text-5xl {
+        font-size: 2rem;
+    }
+
+    .w-96 {
+        width: 100%;
+        max-width: 300px;
+    }
 }
